@@ -1,25 +1,42 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text, Anchor, Image, Center, Box } from '@mantine/core';
 import useStyles from './Welcome.styles';
 
 export function Welcome() {
   const { classes } = useStyles();
 
   return (
-    <>
-      <Title className={classes.title} align="center" mt={100}>
-        Welcome to{' '}
-        <Text inherit variant="gradient" component="span">
-          Mantine
-        </Text>
-      </Title>
-      <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/theming/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit index.tsx file.
+    <Box>
+      <Center>
+        <Image
+          src='logo.png'
+          width={300}
+          pt={100}
+        />
+      </Center>
+      <Text align="center" mt={100}>
+        We're currently working on
       </Text>
-    </>
+      <Title order={1} align="center"
+      >
+        Treasure Hunter
+      </Title>
+      <Text
+        align="center"
+        pt={50}
+      >
+        Drop us an email
+      </Text>
+      <Title
+        align="center"
+        order={3}
+      >
+        <Anchor
+          href="mailto:info@hamonray.com"
+          color={'dark'}
+          size={'xl'}
+        >info@hamonray.com</Anchor>
+      </Title>
+
+    </Box>
   );
 }
