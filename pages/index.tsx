@@ -5,7 +5,7 @@ import { Box } from '@mantine/core';
 export default function HomePage() {
   return (
     <Box style={{
-      background: '#c93529',
+      // background: '#c93529',
       minHeight: '100vh'
     }}>
       <Welcome />

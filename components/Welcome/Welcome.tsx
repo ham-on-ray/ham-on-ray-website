@@ -5,10 +5,10 @@ export function Welcome() {
   const { classes } = useStyles();
 
   return (
-    <Box>
+    <Box pb={100}>
       <Center>
         <Image
-          src='logo.png'
+          src='logo-red.png'
           width={300}
           pt={100}
         />
@@ -20,6 +20,20 @@ export function Welcome() {
       >
         Treasure Hunter
       </Title>
+
+      <Text align="center" mt={100} mb={20}>
+        Checkout our latest games
+      </Text>
+      <Center>
+        <iframe
+          src="https://itch.io/embed/1509473?linkback=true&amp;bg_color=8d0085&amp;fg_color=ffffff&amp;link_color=edde00&amp;border_color=d424ca"
+          width="552" height="167" frameBorder="0"
+        >
+          <a href="https://hamonraygames.itch.io/dont-mess-with-my-console">
+            Don't Mess With My Console by Ham on Ray Games
+          </a>
+        </iframe>
+      </Center>
       <Text
         align="center"
         pt={50}
